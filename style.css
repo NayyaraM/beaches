@@ -1,0 +1,64 @@
+body{
+  background-color: #fffefa;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+nav{
+  background-color: #2ac9cf;
+  padding:10px;
+  margin: 0px;
+}
+
+nav a{
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 100px;
+}
+
+a:link{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #65eaec
+}
+
+#description{
+  background-color: #d1d1d1;
+  margin: 3%;
+  width: 45%;
+}
+
+
+section{
+  background-color: #d1d1d1;
+  width: 25%;
+  color: #ffffff;
+  margin: 2%;
+}
+
+.beach{
+  background-color: #2ac9cf;
+  width: 18%;
+  color: #f5ffff;
+  margin: 2%;
+}
+
+h1{
+  color: #2ac9cf;
+  margin: 3%;
+}
+h2{
+  background-color: #2ac9cf;
+  width: 18%;
+  margin: 2%;
+}
+
+
+iframe{
+  display: flex; 
+  float: right;
+  align-content: flex-start;
+}
