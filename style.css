@@ -4,10 +4,46 @@ body{
   font-family: sans-serif;
   font-size: 15px;
 }
-nav{
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;          
   background-color: #2ac9cf;
-  padding:10px;
-  margin: 0px;
+  padding: 10px 20px;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.search-form {
+  display: flex;
+  gap: 5px;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #6dd8d9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #56e3e6;
 }
 
 nav a{
@@ -22,13 +58,14 @@ a:link{
 }
 
 a:hover{
-  color: #65eaec
+  color: #56e3e6
 }
 
-#description{
+.description{
   background-color: #d1d1d1;
-  margin: 3%;
+  margin: 2%;
   width: 45%;
+  padding: 6px;
 }
 
 
@@ -37,23 +74,35 @@ section{
   width: 25%;
   color: #ffffff;
   margin: 2%;
+  text-indent: 1%;
 }
 
 .beach{
   background-color: #2ac9cf;
-  width: 18%;
+  width: 15%;
   color: #f5ffff;
   margin: 2%;
+  font-weight: 530;
+  padding: 4px;
+}
+
+.beach.highlight {
+  background-color: #56e3e6;
+  outline: 3px solid #2ac9cf;
 }
 
 h1{
   color: #2ac9cf;
-  margin: 3%;
+  margin: 2%;
+  font-weight: 450;
+  font-size: 40px;
 }
 h2{
   background-color: #2ac9cf;
   width: 18%;
   margin: 2%;
+  font-weight: 530;
+  padding: 6px;
 }
 
 

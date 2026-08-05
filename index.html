@@ -8,16 +8,33 @@
     <main>
       <script src="sketch.js"></script>
 
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#">Beaches</a>
-        <a href="#">Spreading Awareness</a>
-      </nav>
+<nav class="navbar">
+
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#orchard">Orchard Beach</a>
+    <a href="#coney">Coney Island Beach</a>
+    <a href="#brighton">Brighton Beach</a>
+    <a href="#manhattan">Manhattan Beach</a>
+    <a href="#midland">Midland Beach</a>
+    <a href="#south">South Beach</a>
+    <a href="#cedar">Cedar Grove Beach</a>
+    <a href="#wolfe">Wolfe's Pond Beach</a>
+    <a href="#">Spreading Awareness</a>
+  </div>
+
+
+  <form class="search-form" action="/search" method="GET">
+    <input type="text" name="query" placeholder="Search..." required>
+    <button type="submit">Search</button>
+  </form>
+</nav>
+
       <br />
       <h1>Beach Water Quality and Pollution in NYC</h1>
       <br />
-      <h2 class="beach">Project Overview:</h2>
-      <p id="description">
+      <h2>Project Overview:</h2>
+      <p class="description">
         We want to spread awareness about the water quality in beaches in New
         York, sharing and encouraging New Yorkers to take care of the beaches
         and reduce sea pollution. Our targeted demographic is beach goers, who
@@ -40,32 +57,32 @@
 
       <h3 class="beach" id="brighton">Brighton</h3>
       <section>
-        <p>Click here for more information and details...</p>
+        <p>Click here for more information and details..</p>
       </section>
 
       <h3 class="beach" id="manhattan">Manhattan</h3>
       <section>
-        <p>Click here for more information and details...</p>
+        <p>Click here for more information and details..</p>
       </section>
 
       <h3 class="beach" id="midland">Midland</h3>
       <section>
-        <p>Click here for more information and details...</p>
+        <p>Click here for more information and details..</p>
       </section>
 
       <h3 class="beach" id="south">South</h3>
       <section>
-        <p>Click here for more information and details...</p>
+        <p>Click here for more information and details..</p>
       </section>
 
       <h3 class="beach" id="cedar">Cedar Grove</h3>
       <section>
-        <p>Click here for more information and details...</p>
+        <p>Click here for more information and details..</p>
       </section>
 
       <h3 class="beach" id="wolfe">Wolfe's Pond</h3>
       <section>
-        <p>Click here for more information and details...</p>
+        <p>Click here for more information and details..</p>
       </section>
     </main>
 
