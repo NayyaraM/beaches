@@ -55,13 +55,13 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(250, 250, 250);
   text-decoration: none;
   margin-right: 15px;
   
 }
 a:link {
-  color: #ffffff
+  color: #fdfdfd;
 }
 a:hover {
   color: #6d7c7e;
@@ -128,14 +128,24 @@ h2 {
   border-radius: 10px;
 }
 
-section {
+.highlight {
+  background-color: #ffd166 !important;
+  color: #0b5963 !important;
+  transition: background-color 0.3s ease;
 }
 
-
 .scroll {
-    background-color: #ffffff;
+    background-color: #b0cfd3;
   width: 25%;
   color: #0b5963;
   margin: 2%;
   text-indent: 1%;
 }
+
+
+ footer {
+      text-align: center;
+      padding: 30px;
+      background: #064b55;
+      color: white;
+    }

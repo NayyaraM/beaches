@@ -6,15 +6,13 @@
   </head>
   <body>
     <main>
-      <script src="sketch.js"></script>
-
       <nav class="navbar">
         <div class="nav-links">
           <a href="#">Home</a>
           <a href="#">Spreading Awareness</a>
         </div>
-        <form class="search-form" action="/search" method="GET">
-          <input type="text" name="query" placeholder="Search..." required />
+        <form id="searchForm" class="search-form" action="#" method="GET">
+          <input id="searchInput" type="text" name="query" placeholder="Search..." required />
           <button type="submit">Search</button>
         </form>
       </nav>
@@ -36,7 +34,7 @@
       <h2 id="nyc">Find beaches in NYC:</h2>
       <div class="scroll-section">
         <section>
-          <h3 class="beach" id="orchard">Orchard Beach</h3>
+          <h3 class="beach" id="orchard-beach" data-search="orchard beach" data-page="beach.html" data-beach="orchard-beach">Orchard Beach</h3>
           <a
             href="https://editor.p5js.org/Nayyara1/full/_9tuL5lfh"
             class="scroll"
@@ -45,49 +43,49 @@
         </section>
 
         <section>
-          <h3 class="beach" id="coney">Coney Island Beach</h3>
+          <h3 class="beach" id="coney-island-beach" data-search="coney island beach" data-page="beach.html" data-beach="coney-island-beach">Coney Island Beach</h3>
+          <a href="https://editor.p5js.org/kamila127/full/g1Jh7bVr3" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
+
+        <section>
+          <h3 class="beach" id="brighton-beach" data-search="brighton beach" data-page="beach.html" data-beach="brighton-beach">Brighton Beach</h3>
           <a href="" class="scroll"
             >Click here for more information and details..</a
           >
         </section>
 
         <section>
-          <h3 class="beach" id="brighton">Brighton Beach</h3>
+          <h3 class="beach" id="manhattan-beach" data-search="manhattan beach" data-page="beach.html" data-beach="manhattan-beach">Manhattan Beach</h3>
           <a href="" class="scroll"
             >Click here for more information and details..</a
           >
         </section>
 
         <section>
-          <h3 class="beach" id="manhattan">Manhattan Beach</h3>
+          <h3 class="beach" id="midland-beach" data-search="midland beach" data-page="beach.html" data-beach="midland-beach">Midland Beach</h3>
           <a href="" class="scroll"
             >Click here for more information and details..</a
           >
         </section>
 
         <section>
-          <h3 class="beach" id="midland">Midland Beach</h3>
+          <h3 class="beach" id="south-beach" data-search="south beach" data-page="beach.html" data-beach="south-beach">South Beach</h3>
           <a href="" class="scroll"
             >Click here for more information and details..</a
           >
         </section>
 
         <section>
-          <h3 class="beach" id="south">South Beach</h3>
+          <h3 class="beach" id="cedar-grove-beach" data-search="cedar grove beach" data-page="beach.html" data-beach="cedar-grove-beach">Cedar Grove Beach</h3>
           <a href="" class="scroll"
             >Click here for more information and details..</a
           >
         </section>
 
         <section>
-          <h3 class="beach" id="cedar">Cedar Grove Beach</h3>
-          <a href="" class="scroll"
-            >Click here for more information and details..</a
-          >
-        </section>
-
-        <section>
-          <h3 class="beach" id="wolfe">Wolfe's Pond Beach</h3>
+          <h3 class="beach" id="wolfe-s-pond-beach" data-search="wolfe's pond beach" data-page="beach.html" data-beach="wolfe-s-pond-beach">Wolfe's Pond Beach</h3>
           <a href="" class="scroll"
             >Click here for more information and details..</a
           >
@@ -102,7 +100,19 @@
           border: 1px solid #ccc; /* Optional: adds a border around the box */
                 /* Optional: adds space inside the box */
         }
+
+        .highlight {
+          background-color: #ffd166 !important;
+          color: #0b5963 !important;
+          transition: background-color 0.3s ease;
+        }
       </style>
     </main>
+ <footer>
+    <p>© 2026 NYC Beach Awareness</p>
+  </footer>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
