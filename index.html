@@ -8,29 +8,19 @@
     <main>
       <script src="sketch.js"></script>
 
-<nav class="navbar">
-
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#orchard">Orchard Beach</a>
-    <a href="#coney">Coney Island Beach</a>
-    <a href="#brighton">Brighton Beach</a>
-    <a href="#manhattan">Manhattan Beach</a>
-    <a href="#midland">Midland Beach</a>
-    <a href="#south">South Beach</a>
-    <a href="#cedar">Cedar Grove Beach</a>
-    <a href="#wolfe">Wolfe's Pond Beach</a>
-    <a href="#">Spreading Awareness</a>
-  </div>
-
-
-  <form class="search-form" action="/search" method="GET">
-    <input type="text" name="query" placeholder="Search..." required>
-    <button type="submit">Search</button>
-  </form>
-</nav>
+      <nav class="navbar">
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Spreading Awareness</a>
+        </div>
+        <form class="search-form" action="/search" method="GET">
+          <input type="text" name="query" placeholder="Search..." required />
+          <button type="submit">Search</button>
+        </form>
+      </nav>
 
       <br />
+
       <h1>Beach Water Quality and Pollution in NYC</h1>
       <br />
       <h2>Project Overview:</h2>
@@ -43,49 +33,76 @@
         Yorkers as this is their waters.
       </p>
       <br />
-      <h2>Find beaches in NYC:</h2>
+      <h2 id="nyc">Find beaches in NYC:</h2>
+      <div class="scroll-section">
+        <section>
+          <h3 class="beach" id="orchard">Orchard Beach</h3>
+          <a
+            href="https://editor.p5js.org/Nayyara1/full/_9tuL5lfh"
+            class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
 
-      <h3 class="beach" id="orchard">Orchard</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+        <section>
+          <h3 class="beach" id="coney">Coney Island Beach</h3>
+          <a href="" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
 
-      <h3 class="beach" id="coney">Coney Island</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+        <section>
+          <h3 class="beach" id="brighton">Brighton Beach</h3>
+          <a href="" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
 
-      <h3 class="beach" id="brighton">Brighton</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+        <section>
+          <h3 class="beach" id="manhattan">Manhattan Beach</h3>
+          <a href="" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
 
-      <h3 class="beach" id="manhattan">Manhattan</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+        <section>
+          <h3 class="beach" id="midland">Midland Beach</h3>
+          <a href="" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
 
-      <h3 class="beach" id="midland">Midland</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+        <section>
+          <h3 class="beach" id="south">South Beach</h3>
+          <a href="" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
 
-      <h3 class="beach" id="south">South</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+        <section>
+          <h3 class="beach" id="cedar">Cedar Grove Beach</h3>
+          <a href="" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
 
-      <h3 class="beach" id="cedar">Cedar Grove</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+        <section>
+          <h3 class="beach" id="wolfe">Wolfe's Pond Beach</h3>
+          <a href="" class="scroll"
+            >Click here for more information and details..</a
+          >
+        </section>
+      </div>
 
-      <h3 class="beach" id="wolfe">Wolfe's Pond</h3>
-      <section>
-        <p>Click here for more information and details..</p>
-      </section>
+      <style>
+        .scroll-section {
+          height: 300px;
+            background-color: #e8f4f2;
+          overflow-y: auto;     /* Adds a vertical scrollbar only when needed */
+          border: 1px solid #ccc; /* Optional: adds a border around the box */
+                /* Optional: adds space inside the box */
+        }
+      </style>
     </main>
-
-
   </body>
 </html>
