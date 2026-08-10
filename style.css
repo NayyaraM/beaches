@@ -1,0 +1,75 @@
+h1{
+  text-align: center;
+  background-color: #173b3f;
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white; 
+}
+h2{
+  background-color: #173b3f;
+  text-align: center;
+  width: 500px;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.Cedar{
+  float: right;
+  width:  500px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #173b3f;
+  color: black;
+  text-align: center;
+}
+nav{
+  font-size: 20px;
+  padding-left: 50px;
+}
+p{
+  font-size: 25px;
+}
+
+h1{
+  text-align: center;
+  background-color: #173b3f;
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white; 
+}
+h2{
+  background-color: #173b3f;
+  text-align: center;
+  width: 500px;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.Wolfe{
+  width: 750px;
+  float: right;
+  height: 10px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #173b3f;
+  color: black;
+  text-align: center;
+}
+nav{
+  font-size: 20px;
+  padding-left: 50px;
+}
+p{
+  font-size: 25px;
+  width: 400px;
+}
