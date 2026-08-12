@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <title>Manhattan Beach</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <button class="menu-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="search-wrap">
+        <input type="text" class="search-input" placeholder="Search">
+        <span class="search-icon">&#128269;</span>
+      </div>
+      <div class="profile-icon" aria-label="Profile">&#128100;</div>
+    </header>
+
+    <main>
+      <div class="title-row">
+        <span class="pin-icon">&#128205;</span>
+        <h1 class="title">Manhattan</h1>
+      </div>
+
+      <p class="address">Oriental Blvd. between Ocean Ave. and Mackenzie St.</p>
+
+      <div class="content-grid">
+        <div class="info-box">
+          <p>
+            This beach on Brooklyn's southern tip is a popular summertime
+            destination for people from all over New York City. As the
+            weather heats up, families pack picnic baskets and come out to
+            barbeque, loll on the sand, and swim in the waves. Bookended by
+            playgrounds, and with two large baseball diamonds on its eastern
+            border, as well as tennis, volleyball, basketball, and handball,
+            this park has plenty of room for all types of active outdoor
+            recreation.
+          </p>
+        </div>
+
+        <div class="side-col">
+          <div class="image-box">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c1/a5/4a/from-street-look-at-the.jpg?w=1200&h=1200&s=1"
+              alt="Street view of the entrance to Manhattan Beach"
+            >
+          </div>
+
+          <div class="graph-box">
+            <canvas id="graphCanvas" width="300" height="180"></canvas>
+            <p class="graph-label">graph</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
