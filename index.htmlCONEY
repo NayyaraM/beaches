@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coney Island Beach | Info Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8f7;
+      color: #173b3f;
+    }
+
+    /* ---------------- HEADER ---------------- */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 18px 6%;
+      background: #0b5963;
+      color: white;
+
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.25s;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+      transform: translateY(-2px);
+    }
+
+    /* ---------------- HERO ---------------- */
+
+    .hero {
+      min-height: 500px;
+      padding: 60px 6%;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(11, 89, 99, 0.08),
+          rgba(80, 170, 160, 0.15)
+        );
+    }
+
+    /* IMAGE */
+
+    .beach-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+
+      border-radius: 20px;
+
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+
+      transition: transform 0.3s ease;
+    }
+
+    .beach-image:hover {
+      transform: scale(1.02);
+    }
+
+    /* TEXT */
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #064b55;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+
+      background: #f4a261;
+      color: white;
+
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+
+      transition: 0.25s;
+    }
+
+    .button:hover {
+      background: #e76f51;
+      transform: translateY(-3px);
+    }
+
+    /* ---------------- INFO CARDS ---------------- */
+
+    .info-section {
+      padding: 70px 6%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: #064b55;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #0b5963;
+    }
+
+    .card p {
+      line-height: 1.6;
+      color: #526568;
+    }
+
+    /* ---------------- GRAPH ---------------- */
+
+    .graph-section {
+      padding: 70px 6%;
+      background: #e8f4f2;
+    }
+
+    .graph-container {
+      max-width: 900px;
+      margin: auto;
+
+      background: white;
+      padding: 30px;
+
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .bar-chart {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+
+      height: 300px;
+      margin-top: 30px;
+
+      border-bottom: 2px solid #555;
+      border-left: 2px solid #555;
+    }
+
+    .bar {
+      width: 55px;
+      background: linear-gradient(#35a7a0, #0b5963);
+
+      border-radius: 7px 7px 0 0;
+
+      position: relative;
+
+      transition: 0.3s;
+    }
+
+    .bar:hover {
+      background: #f4a261;
+      transform: scaleY(1.04);
+    }
+
+    .bar span {
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.85rem;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #064b55;
+      color: white;
+    }
+
+    /* ---------------- MOBILE ---------------- */
+
+    @media (max-width: 800px) {
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.3rem;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .beach-image {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- INTERACTIVE HEADER -->
+  <header>
+    <div class="logo"> Coney Island Beach</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+     
+    </nav>
+  </header>
+
+
+  <!-- TOP SECTION -->
+  <section class="hero" id="home">
+
+    <!-- IMAGE ON LEFT -->
+    <div>
+      <img
+        class="beach-image"
+        src="https://www.nycgovparks.org/photo_gallery/full_size/25097.jpg" alt="BeachPic"
+       
+      >
+    </div>
+
+    <!-- INFORMATION ON RIGHT -->
+    <div class="hero-text">
+      <h1>Coney Island Beach</h1>
+
+      <p>
+       37, Riegelmann Boardwalk, Brooklyn, NY 11224
+      </p>
+
+       <div class="card">
+         Coney Island Beach is a free, three-mile public beach in Brooklyn, New York, that combines classic ocean swimming with a historic amusement park atmosphere. Visitors can enjoy sunbathing on the sand, walking along the famous 2.7-mile Riegelmann Boardwalk, and fishing on Steeplechase Pier. Right next to the beach, you will find iconic attractions like Luna Park's Cyclone roller coaster, Deno's Wonder Wheel, the New York Aquarium, and the original Nathan's Famous Hot Dogs.
+      </div>
+      
+    </div>
+
+  </section>
+  
+
+
+  <!-- GRAPH -->
+  <section class="graph-section" id="stats">
+
+    <div class="section-title">
+      <h2> Statistics</h2>
+      
+    </div>
+
+    <div class="graph-container">
+
+      <div class="bar-chart">
+
+        <div class="bar" style="height: 45%;">
+          <span>2021</span>
+        </div>
+
+        <div class="bar" style="height: 58%;">
+          <span>2022</span>
+        </div>
+
+        <div class="bar" style="height: 70%;">
+          <span>2023</span>
+        </div>
+
+        <div class="bar" style="height: 82%;">
+          <span>2024</span>
+        </div>
+
+        <div class="bar" style="height: 92%;">
+          <span>2025</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>=
+
+ 
+
+
+  <footer>
+    <p>© 2026 NYC Beach Awareness</p>
+  </footer>
+
+</body>
+</html>
