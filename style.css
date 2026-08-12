@@ -1,0 +1,141 @@
+body {
+  background-color: #dfeceb;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 0;
+
+}
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 18px 6%;
+      background: #0b5963;
+      color: white;
+
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.25s;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+      transform: translateY(-2px);
+    }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b5963;
+  padding: 10px 20px;
+  
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  
+}
+a:link {
+  color: #6d7c7e;
+}
+a:hover {
+  color: #6d7c7e;
+}
+
+
+.search-form {
+  display: flex;
+  gap: 5px;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #173b31;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #56e3e6;
+}
+
+h1 {
+  color: #064b55;
+  margin: 2%;
+  font-weight: 600;
+  font-size: 40px;
+}
+h2 {
+  background-color: #064b55;
+  color: #ffffff;
+  width: 18%;
+  margin: 2%;
+  font-weight: 530;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.description {
+  background-color: #ffffff;
+  color: #0b5963;
+  margin: 2%;
+  width: 45%;
+  padding: 6px;
+}
+
+.beach {
+    background-color: #0b5963;
+  color: #ffffff;
+  width: 15%;
+  margin: 2%;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+section {
+}
+
+
+.scroll {
+    background-color: #ffffff;
+  width: 25%;
+  color: #0b5963;
+  margin: 2%;
+  text-indent: 1%;
+}
