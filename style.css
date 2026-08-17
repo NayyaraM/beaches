@@ -22,6 +22,7 @@ body {
       box-shadow: 0 3px 12px rgba(0,0,0,0.15);
     }
 
+
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
@@ -61,7 +62,7 @@ body {
   
 }
 a:link {
-  color: #6d7c7e;
+  color: #a3b9bd;
 }
 a:hover {
   color: #6d7c7e;
@@ -139,3 +140,4 @@ section {
   margin: 2%;
   text-indent: 1%;
 }
+
